@@ -1,0 +1,114 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+#topo {
+  background: #3f3f3f;
+  padding: 10px 20px; }
+  @media (max-width: 768px) {
+    #topo .row {
+      flex-direction: column;
+      align-items: center; } }
+
+#topo__logo img {
+  height: 70px;
+  width: auto;
+  background-color: #8b857e;
+  border-radius: 15px;
+  padding: 5px; }
+
+#topo__searcharea {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  width: 100%; }
+  #topo__searcharea input[type="search"] {
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 100%; }
+  #topo__searcharea button {
+    padding: 10px 20px;
+    margin-right: 2px;
+    background-color: #14141465;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; }
+    #topo__searcharea button:hover {
+      background-color: #72727265; }
+
+#topo__cadastro {
+  display: flex;
+  align-items: center;
+  margin: 0 10px; }
+  #topo__cadastro .bi {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 5px; }
+  #topo__cadastro #topo__cadastro--entrarOuCadastrar {
+    color: white;
+    margin-left: 15px; }
+    #topo__cadastro #topo__cadastro--entrarOuCadastrar b {
+      cursor: pointer; }
+    #topo__cadastro #topo__cadastro--entrarOuCadastrar a {
+      color: #eeeeee;
+      text-decoration: none; }
+
+#topo__promocao {
+  background-color: #b1b1b1;
+  border-radius: 8px;
+  padding: 3px 10px;
+  margin-top: 10px; }
+  #topo__promocao #topo__promocao--assinar {
+    background: green;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5px; }
+    #topo__promocao #topo__promocao--assinar a {
+      text-decoration: none; }
+    #topo__promocao #topo__promocao--assinar h5 {
+      color: white;
+      margin: 0;
+      padding: 2px 0; }
+  #topo__promocao .topo__promocao--cutprice {
+    text-decoration: line-through; }
+  #topo__promocao .topo__promocao--newprice {
+    font-weight: bold; }
+
+.bi-heart,
+.bi-person-fill-gear {
+  font-size: 1.7rem;
+  color: white;
+  margin: 0 10px; }
+  .bi-heart:hover,
+  .bi-person-fill-gear:hover {
+    color: #b1b1b1; }
+
+#topo__ferramentas {
+  background: #3f3f3f; }
+  #topo__ferramentas .nav-link {
+    border-radius: 10px;
+    color: white; }
+  #topo__ferramentas .active {
+    background: #646464; }
+
+@media (max-width: 768px) {
+  #topo .row {
+    flex-direction: column;
+    align-items: center; }
+
+  #topo__searcharea {
+    margin: 10px 0; }
+
+  #topo__cadastro {
+    justify-content: center;
+    margin: 10px 0; }
+
+  #topo__promocao {
+    margin-top: 10px; } }
+
+/*# sourceMappingURL=sass.css.map */

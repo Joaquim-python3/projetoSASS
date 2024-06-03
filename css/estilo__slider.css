@@ -1,0 +1,83 @@
+/* Updated CSS */
+
+section.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.slider-content input {
+    /* display: none; */
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+.nav-manual,
+.nav-auto {
+    position: absolute;
+    /* width: 100%; */
+    margin-top: 35%; /* distance of the dots from the image */
+    justify-content: center;
+    display: flex;
+}
+
+.nav-auto {
+    z-index: 10; /* Higher z-index */
+}
+
+.nav-manual {
+    z-index: 5; /* Lower z-index */
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: red;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1 {
+    background-color: red;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background-color: red;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: -25%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -1%;
+}

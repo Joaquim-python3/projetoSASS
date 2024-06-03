@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jink Filmess</title>
     <link rel="stylesheet" href="css/sass.css">
+    <link rel="stylesheet" href="css/estilo__slider.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="javascript/script__topo__ferramentas.js" defer></script>
+    <script src="javascript/script__slide.js" defer></script>
 </head>
 <body>
     
     <div id="topo" class="container-fluid">
         <div class="row align-items-center justify-content-between">
-
             <div class="col-auto">
                 <a href="#">
                     <div id="topo__logo">
@@ -56,16 +57,16 @@
     <div id="topo__ferramentas">
         <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Categorias de filmes</a>
+                <a class="nav-link active" aria-current="page" href="#">Categorias de filmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Categorias de séries</a>
+                <a class="nav-link" href="#">Categorias de séries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Categorias de animes</a>
+                <a class="nav-link" href="#">Categorias de animes</a>
             </li>
             <li class="nav-item">   
-              <a class="nav-link" href="#">Filmes Nacionais</a>
+                <a class="nav-link" href="#">Filmes Nacionais</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">TV aberta</a>
@@ -75,14 +76,34 @@
             </li>
         </ul>
     </div>
-    <div class="container d-flex justify-content-center">
-        <div id="topo__imagem--rotativa">
-            <img src="images/corpo_capa_blog_2.jpg" alt="" class="img-fluid">
+
+    <!-- FAZENDO UM SLIDER -->
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" id="radio1" name="btn-radio" checked>
+            <input type="radio" id="radio2" name="btn-radio">
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="images/corpo_capa_blog_2.jpg" alt="slide1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="images/corpo_capa_blog_1.jpg" alt="slide1">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+            </div>
         </div>
-    </div>
+    </section>
 
     <div class="container text-center">
-        Filmes aqui
+
     </div>
 </body>
- </html>
+</html>

@@ -1,0 +1,32 @@
+#corpo__blog {
+    height: auto;
+    width: 71%;
+    border: 1px solid red;
+    margin-top: 100px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        color: white;
+    }
+ 
+    span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; /* Espaço entre o h1 e a div do grupo de botões */
+    justify-content: space-between;
+    }
+
+    .btn-outline-primary{
+        &:hover {
+        background-color: #719ecf;
+        color: white;
+        }
+    }
+    .btn-group{
+        margin-right: 10px;
+    }
+
+}

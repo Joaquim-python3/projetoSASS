@@ -1,0 +1,25 @@
+@charset "UTF-8";
+#corpo__blog {
+  height: auto;
+  width: 71%;
+  border: 1px solid red;
+  margin-top: 100px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column; }
+  #corpo__blog h1 {
+    color: white; }
+  #corpo__blog span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    /* Espaço entre o h1 e a div do grupo de botões */
+    justify-content: space-between; }
+  #corpo__blog .btn-outline-primary:hover {
+    background-color: #719ecf;
+    color: white; }
+  #corpo__blog .btn-group {
+    margin-right: 10px; }
+
+/*# sourceMappingURL=sass__corpo__blog.css.map */

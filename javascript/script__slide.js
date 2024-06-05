@@ -1,17 +1,9 @@
-var radio = document.querySelector('.manual-btn')
-var cont = 1
+let index = 0;
 
-document.getElementById('radio1').checked = true
-
-setInterval(() =>{
-    proximaImg()
-}, 5000)
-
-function proximaImg(){
-    cont++
-    if(cont > 2){
-        cont = 1
-    }
-    document.getElementById('radio'+cont).checked = true
-
+function changeSlide() {
+    const slides = document.querySelector('.slides');
+    index = (index + 1) % 2; // Alterna entre 0 e 1
+    slides.style.transform = `translateX(${-index * 1363}px)`;
 }
+
+setInterval(changeSlide, 5000);

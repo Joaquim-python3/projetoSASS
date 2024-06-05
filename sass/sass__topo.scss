@@ -55,6 +55,9 @@ body {
 
         &:hover {
             background-color: #72727265;
+            color: rgb(0, 0, 0);
+            transition: 0.5s;
+            
         }
     }
 }
@@ -76,6 +79,10 @@ body {
 
         b {
             cursor: pointer;
+            &:hover{
+                color: rgb(151, 151, 151);
+                transition: 0.5s;
+            }
         }
 
         a {
@@ -96,6 +103,10 @@ body {
         border-radius: 5px;
         text-align: center;
         margin-bottom: 5px;
+        &:hover{
+            background: rgb(0, 99, 0);
+            transition: 0.5s;
+        }
 
         a {
             text-decoration: none;

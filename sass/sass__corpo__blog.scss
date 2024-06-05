@@ -1,22 +1,23 @@
 #corpo__blog {
     height: auto;
     width: 71%;
-    border: 1px solid red;
-    margin-top: 100px;
+    // border: 1px solid red;
+    // margin-top: 100px;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
 
     h1{
         color: white;
+        margin: 0 auto;
     }
  
     span {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px; /* Espaço entre o h1 e a div do grupo de botões */
-    justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px; /* Espaço entre o h1 e a div do grupo de botões */
+        justify-content: space-between;
     }
 
     .btn-outline-primary{
@@ -27,6 +28,36 @@
     }
     .btn-group{
         margin-right: 10px;
+    }
+
+    .card{
+        margin: 5px 1px;
+        // border: 1px solid blue;
+        color: white;
+        background: #2f4058;
+
+        .card-img-top{
+            padding: 5px;
+            width: 90%;
+            height: auto;
+            margin: 5px auto;
+            background: rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+
+        .title-duration {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .title-duration h5,
+        .title-duration p {
+            margin: 0; /* Remove margens padrão */
+        }
+    }
+    .btn-check{
+        color: green;
     }
 
 }

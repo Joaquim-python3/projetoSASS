@@ -2,13 +2,12 @@
 #corpo__blog {
   height: auto;
   width: 71%;
-  border: 1px solid red;
-  margin-top: 100px;
   margin: 10px auto;
   display: flex;
   flex-direction: column; }
   #corpo__blog h1 {
-    color: white; }
+    color: white;
+    margin: 0 auto; }
   #corpo__blog span {
     display: flex;
     flex-direction: row;
@@ -21,5 +20,26 @@
     color: white; }
   #corpo__blog .btn-group {
     margin-right: 10px; }
+  #corpo__blog .card {
+    margin: 5px 1px;
+    color: white;
+    background: #2f4058; }
+    #corpo__blog .card .card-img-top {
+      padding: 5px;
+      width: 90%;
+      height: auto;
+      margin: 5px auto;
+      background: black;
+      border-radius: 10px; }
+    #corpo__blog .card .title-duration {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    #corpo__blog .card .title-duration h5,
+    #corpo__blog .card .title-duration p {
+      margin: 0;
+      /* Remove margens padrão */ }
+  #corpo__blog .btn-check {
+    color: green; }
 
 /*# sourceMappingURL=sass__corpo__blog.css.map */

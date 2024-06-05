@@ -44,7 +44,9 @@ body {
     border-radius: 4px;
     cursor: pointer; }
     #topo__searcharea button:hover {
-      background-color: #72727265; }
+      background-color: #72727265;
+      color: black;
+      transition: 0.5s; }
 
 #topo__cadastro {
   display: flex;
@@ -59,6 +61,9 @@ body {
     margin-left: 15px; }
     #topo__cadastro #topo__cadastro--entrarOuCadastrar b {
       cursor: pointer; }
+      #topo__cadastro #topo__cadastro--entrarOuCadastrar b:hover {
+        color: #979797;
+        transition: 0.5s; }
     #topo__cadastro #topo__cadastro--entrarOuCadastrar a {
       color: #eeeeee;
       text-decoration: none; }
@@ -73,6 +78,9 @@ body {
     border-radius: 5px;
     text-align: center;
     margin-bottom: 5px; }
+    #topo__promocao #topo__promocao--assinar:hover {
+      background: #006300;
+      transition: 0.5s; }
     #topo__promocao #topo__promocao--assinar a {
       text-decoration: none; }
     #topo__promocao #topo__promocao--assinar h5 {

@@ -115,3 +115,29 @@ function verFilmes(){
         console.log(filme.titulo)
     });
 }
+
+function searchByNameMovieInJSON(name){
+    var name;
+    //JSON
+    // converser objeto para json
+    const jsonData = JSON.stringify(objs);
+    // console.log(jsonData);
+    // console.log(typeof jsonData); //string
+    
+    // converter json para objeto javascript
+    const objData = JSON.parse(jsonData);
+    // console.log(objData);
+    // console.log(typeof objData);
+    
+    objData.map((filme) =>{
+
+        if(name == filme.titulo){
+            name = filme.titulo;
+            console.log(name);
+        }else{
+            console.error("Filme nao encontrado");
+        }
+    });
+
+    return name;
+}

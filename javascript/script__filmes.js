@@ -6,6 +6,12 @@ const objs = [
         imagem: "https://m.media-amazon.com/images/I/51-NM6z5EEL._AC_SY679_.jpg"
     },
     {
+        titulo: "Deadpool",
+        duracao: "200 minutos",
+        sinopse: "História do Deadpool",
+        imagem: "/images/filmes/image__deadpool__launch.png"
+    },
+    {
         titulo: "Um Sonho de Liberdade",
         duracao: "142 minutos",
         sinopse: "A amizade entre dois prisioneiros ao longo de várias décadas em uma prisão dos Estados Unidos.",
@@ -64,36 +70,6 @@ const objs = [
         duracao: "120 minutos",
         sinopse: "A história da criação do Facebook e as batalhas legais e pessoais enfrentadas pelo seu fundador, Mark Zuckerberg.",
         imagem: "https://m.media-amazon.com/images/I/51-1hON5tUL._AC_SY679_.jpg"
-    },
-    {
-        titulo: "O Rei Leão",
-        duracao: "88 minutos",
-        sinopse: "A jornada de Simba, um jovem leão, para se tornar o rei da savana africana.",
-        imagem: "https://m.media-amazon.com/images/I/51+J0wDhgoL._AC_SY679_.jpg"
-    },
-    {
-        titulo: "Cisne Negro",
-        duracao: "108 minutos",
-        sinopse: "Uma bailarina se vê consumida por seu papel em uma produção de 'O Lago dos Cisnes', resultando em uma luta entre sanidade e loucura.",
-        imagem: "https://m.media-amazon.com/images/I/51zbQcnj5PL._AC_SY679_.jpg"
-    },
-    {
-        titulo: "Gladiador",
-        duracao: "155 minutos",
-        sinopse: "Um general romano traído busca vingança contra o imperador corrupto que assassinou sua família.",
-        imagem: "https://m.media-amazon.com/images/I/61mFf5Q0+DL._AC_SY679_.jpg"
-    },
-    {
-        titulo: "O Lobo de Wall Street",
-        duracao: "180 minutos",
-        sinopse: "A ascensão e queda de Jordan Belfort, um corretor de ações de Nova York que se envolve em corrupção e fraude.",
-        imagem: "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg"
-    },
-    {
-        titulo: "Django Livre",
-        duracao: "165 minutos",
-        sinopse: "Um escravo liberto une forças com um caçador de recompensas para resgatar sua esposa das mãos de um fazendeiro brutal.",
-        imagem: "https://m.media-amazon.com/images/I/61G+q-5FTRL._AC_SY679_.jpg"
     }
 ];
 
@@ -134,10 +110,12 @@ function searchByNameMovieInJSON(name){
         if(name == filme.titulo){
             name = filme.titulo;
             console.log(name);
-        }else{
-            console.error("Filme nao encontrado");
         }
     });
 
     return name;
+}
+
+function test(){
+    document.getElementById("nome-filme").innerHTML = "Novo Nome";
 }

@@ -1,0 +1,25 @@
+#corpo__blog {
+  background-color: rgb(80, 80, 80);
+}
+#corpo__blog #login__area {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: auto;
+  background-color: rgb(150, 151, 151);
+  border-radius: 10px;
+}
+#corpo__blog #login__area .logo {
+  height: 100px;
+  width: auto;
+}
+#corpo__blog #login__area #login__area--login {
+  background-color: rgb(184, 184, 184);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=sass_login.css.map */
